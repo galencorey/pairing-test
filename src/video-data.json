@@ -1,0 +1,26 @@
+[
+  {
+    "videoId": 41115,
+    "type": "eye",
+    "timestamp": 1493234912660,
+    "poster": "http://placehold.it/164x234"
+  },
+  {
+    "videoId": 41116,
+    "type": "eye",
+    "timestamp": 1493234913660,
+    "poster": "http://placehold.it/164x234"
+  },
+  {
+    "videoId": 41117,
+    "type": "va",
+    "timestamp": 1493234914660,
+    "poster": "http://placehold.it/164x234"
+  },
+  {
+    "videoId": 41118,
+    "type": "va",
+    "timestamp": 1493234915660,
+    "poster": "http://placehold.it/164x234"
+  }
+]
