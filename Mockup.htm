@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0037)http://localhost:5000/admin/user/8137 -->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./Mockup_files/all.css">
   </head>
   <body>
-    
-      
+
+
 
 <nav class="navbar navbar-default navbar-sc">
   <div class="container-fluid">
@@ -33,128 +33,128 @@
     <i class="glyphicons glyphicons-database glyphicons-white"></i>
    Admin <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            
+
               <li class="dropdown-header">Account Management</li>
-              
-  
+
+
   <li>
     <a href="http://localhost:5000/admin/admin/">
       Admins
     </a>
   </li>
-  
 
-              
-  
+
+
+
   <li>
     <a href="http://localhost:5000/admin/audit/">
       Audit Log
     </a>
   </li>
-  
 
-            
+
+
             <li class="dropdown-header">Views</li>
-            
-  
+
+
   <li>
     <a href="http://localhost:5000/admin/user/">
       Users
     </a>
   </li>
-  
 
-            
-  
+
+
+
   <li>
     <a href="http://localhost:5000/admin/product/">
       Products
     </a>
   </li>
-  
 
-            
-  
+
+
+
   <li>
     <a href="http://localhost:5000/admin/messenger/">
       Messages
     </a>
   </li>
-  
 
-            
-  
+
+
+
   <li>
     <a href="http://localhost:5000/admin/video/">
       Videos
     </a>
   </li>
-  
 
-            
-  
+
+
+
   <li>
     <a href="http://localhost:5000/admin/exam/">
       Exams
     </a>
   </li>
-  
 
-            
-  
+
+
+
   <li>
     <a href="http://localhost:5000/admin/mailing_list/">
       Mailing List
     </a>
   </li>
-  
 
-            
-  
+
+
+
   <li>
     <a href="http://localhost:5000/admin/wallet/">
       Wallet
     </a>
   </li>
-  
 
-            
-  
+
+
+
   <li>
     <a href="http://localhost:5000/admin/reward/">
       Reward Rules
     </a>
   </li>
-  
+
 
           </ul>
         </li>
-        
+
   <li>
     <a href="http://localhost:5000/admin/order/">
-      
+
     <i class="glyphicons glyphicons-invoice glyphicons-white"></i>
    Orders
     </a>
   </li>
-  
+
 
       </ul>
       <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
         <li class="dropdown navbar-avatar">
           <a href="http://localhost:5000/admin/user/8137#" class="dropdown-toggle" data-toggle="dropdown">
-            
+
               <img src="./Mockup_files/photo.jpg" width="32px" height="32px"> <span class="caret"></span></a>
-            
+
             <ul class="dropdown-menu">
-              
-  
+
+
   <li>
     <a href="http://localhost:5000/admin/logout">
       Log Out
     </a>
   </li>
-  
+
 
             </ul>
         </li>
@@ -167,903 +167,27 @@
     </div>
   </div>
 </nav>
-    
-    
+
+
       <div class="container">
-        
-  
-<div class="modal fade " id="modal-edit-user" tabindex="-1" role="dialog" aria-labelledby="modal-edit-userLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-      <div class="modal-content">
-        <form method="POST" action="http://localhost:5000/admin/user/8137">
-          
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <h4 class="modal-title" id="modal-edit-userLabel">Edit user details</h4>
-            </div>
-          
-          <div class="modal-body">
-            
-  
-    
-      <input id="csrf_token" name="csrf_token" type="hidden" value="1480538108##313204a6a094b329a0b4aed4d0145c394c7e72fd">
-    
-  
-    
-      <div class="form-group ">
-        <label for="name"><label for="name">Name</label></label>
-        <input class="form-control" id="name" name="name" type="text" value="Ryan Quigley">
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="email"><label for="email">Email</label></label>
-        <input class="form-control" id="email" name="email" type="text" value="rquigley@gmail.com">
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="qualify_state"><label for="qualify_state">Qualify State</label></label>
-        <input class="form-control" id="qualify_state" name="qualify_state" type="text" value="NY">
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="telephone"><label for="telephone">Telephone</label></label>
-        <input class="form-control" id="telephone" name="telephone" type="text" value="(212) 222-2222">
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="labels"><label for="labels">Labels (Comma delimited)</label></label>
-        <input class="form-control" id="labels" name="labels" type="text" value="">
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="notes"><label for="notes">Notes</label></label>
-        <textarea class="form-control" id="notes" name="notes"></textarea>
-        
-      </div>
-    
-  
-    
-      <div class="checkbox">
-        <label for="has_seen_onboarding">
-          <input checked="" id="has_seen_onboarding" name="has_seen_onboarding" type="checkbox" value="y"> <label for="has_seen_onboarding">Has Seen Onboarding</label>
-        </label>
-      </div>
-    
-  
-    
-      <div class="checkbox">
-        <label for="has_seen_qualification">
-          <input checked="" id="has_seen_qualification" name="has_seen_qualification" type="checkbox" value="y"> <label for="has_seen_qualification">Has Seen Qualification</label>
-        </label>
-      </div>
-    
-  
 
 
-          </div>
-          <div class="modal-footer">
-            
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
-              <button type="submit" class="btn btn-primary">Save</button>
-            
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  
-<div class="modal fade " id="modal-edit-address" tabindex="-1" role="dialog" aria-labelledby="modal-edit-addressLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-      <div class="modal-content">
-        <form method="POST" action="http://localhost:5000/admin/user/None">
-          
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <h4 class="modal-title" id="modal-edit-addressLabel">Edit address details</h4>
-            </div>
-          
-          <div class="modal-body">
-            
-  
-  
-    
-      <input id="csrf_token" name="csrf_token" type="hidden" value="1480538108##313204a6a094b329a0b4aed4d0145c394c7e72fd">
-    
-  
-    
-      <div class="form-group ">
-        <label for="label"><label for="label">Label</label></label>
-        <input class="form-control" id="label" name="label" type="text" value="">
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="street_line_1"><label for="street_line_1">Street</label></label>
-        <input class="form-control" id="street_line_1" name="street_line_1" type="text" value="">
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="street_line_2"><label for="street_line_2">Street 2</label></label>
-        <input class="form-control" id="street_line_2" name="street_line_2" type="text" value="">
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="city"><label for="city">City</label></label>
-        <input class="form-control" id="city" name="city" type="text" value="">
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="state"><label for="state">State</label></label>
-        <select class="form-control" id="state" name="state"><option value="AK">Alaska</option><option value="AL">Alabama</option><option value="AR">Arkansas</option><option value="AS">American Samoa</option><option value="AZ">Arizona</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DC">District of Columbia</option><option value="DE">Delaware</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="IA">Iowa</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="MA">Massachusetts</option><option value="MD">Maryland</option><option value="ME">Maine</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MO">Missouri</option><option value="MP">Northern Mariana Islands</option><option value="MS">Mississippi</option><option value="MT">Montana</option><option value="NA">National</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="NE">Nebraska</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NV">Nevada</option><option value="NY">New York</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VA">Virginia</option><option value="VI">Virgin Islands</option><option value="VT">Vermont</option><option value="WA">Washington</option><option value="WI">Wisconsin</option><option value="WV">West Virginia</option><option value="WY">Wyoming</option></select>
-        
-      </div>
-    
-  
-    
-      <div class="form-group ">
-        <label for="postal_code"><label for="postal_code">Zip</label></label>
-        <input class="form-control" id="postal_code" name="postal_code" type="text" value="">
-        
-      </div>
-    
-  
-
-
-          </div>
-          <div class="modal-footer">
-            
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
-              <button type="submit" class="btn btn-primary">Save</button>
-            
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-
-  
-  <div id="preview-template" style="display: none;">
-  <div class="dz-preview dz-file-preview">
-    <div class="dz-progress">
-      <span class="dz-upload" data-dz-uploadprogress=""></span>
-    </div>
-    <div class="dz-error-message">
-      <span data-dz-errormessage=""></span>
-    </div>
-  </div>
-</div>
-  <div class="modal fade file-upload-modal" id="modal-attach-files" tabindex="-1" role="dialog" aria-labelledby="modal-attach-filesLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-      <div class="modal-content">
-        <form method="POST" action="http://localhost:5000/admin/user/None">
-          
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <h4 class="modal-title" id="modal-attach-filesLabel">File upload</h4>
-            </div>
-          
-          <div class="modal-body">
-            <div class="uploader dz-clickable" data-action-url="/admin/user/8137/upload-file">
-      <div class="text-center">
-        <i class="glyphicons glyphicons-drop x3"></i>
-        <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
-      </div>
-    </div>
-  
-          </div>
-          <div class="modal-footer">
-            
-            
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="content">
-    <div class="row">
-      <div class="col-md-9">
-        
-<table class="table table-striped table-condensed lookup-table">
-  <tbody>
-    
-    
-  
-    <tr>
-      <th>Name</th>
-      <td colspan="3">
-        
-          
-            
-      <a href="http://localhost:5000/admin/user/8137">Ryan Quigley</a>
-    
-          
-        
-      </td>
-    </tr>
-  
-
-    
-  
-    <tr>
-      <th>ID: User</th>
-      <td colspan="3">
-        
-          
-            
-      <code><a href="http://localhost:5000/admin/user/8137">8137</a></code>
-    
-          
-        
-      </td>
-    </tr>
-  
-
-    
-  
-    <tr>
-      <th>ID: Affiliate</th>
-      <td colspan="3">
-        
-          <code>SyK7naHN</code>
-        
-      </td>
-    </tr>
-  
-
-    
-  
-    <tr>
-      <th>ID: Referral</th>
-      <td colspan="3">
-        
-          <code>PpxhXYTI</code>
-        
-      </td>
-    </tr>
-  
-
-    
-  
-    <tr>
-      <th>Phone</th>
-      <td colspan="3">
-        
-          (212) 222-2222
-        
-      </td>
-    </tr>
-  
-
-    
-  
-    <tr>
-      <th>Date created</th>
-      <td colspan="3">
-        
-          Jun 8, 2016, 4:47:29 PM
-        
-      </td>
-    </tr>
-  
-
-    
-  
-    <tr>
-      <th>Date last active</th>
-      <td colspan="3">
-        
-          Nov 30, 2016, 4:49:53 PM
-        
-      </td>
-    </tr>
-  
-
-
-    
-  
-  
-    <tr>
-      <th>Email</th>
-      <td colspan="3">
-        
-          
-            
-      <a href="mailto:rquigley@gmail.com">rquigley@gmail.com</a>
-    
-          
-        
-      </td>
-    </tr>
-  
-
-
-    
-  
-
-    
-  
-    <tr>
-      <th>State</th>
-      <td colspan="3">
-        
-          NY
-        
-      </td>
-    </tr>
-  
-
-
-    
-  
-    <tr>
-      <th>Last exam</th>
-      <td colspan="3">
-        
-          
-            
-      
-        Dec 2015
-      
-    
-          
-        
-      </td>
-    </tr>
-  
-
-
-    
-  
-    <tr>
-      <th>Birthday</th>
-      <td colspan="3">
-        
-          
-            
-      
-        01-Nov 1978 (age: 38)
-      
-    
-          
-        
-      </td>
-    </tr>
-  
-
-
-    
-  
-    <tr>
-      <th>Attachments</th>
-      <td colspan="3">
-        
-          
-            
-      
-  <div id="preview-template" style="display: none;">
-  <div class="dz-preview dz-file-preview">
-    <div class="dz-progress">
-      <span class="dz-upload" data-dz-uploadprogress=""></span>
-    </div>
-    <div class="dz-error-message">
-      <span data-dz-errormessage=""></span>
-    </div>
-  </div>
-</div>
-  <div class="modal fade file-upload-modal" id="modal-attach-files" tabindex="-1" role="dialog" aria-labelledby="modal-attach-filesLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-      <div class="modal-content">
-        <form method="POST" action="http://localhost:5000/admin/user/None">
-          
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <h4 class="modal-title" id="modal-attach-filesLabel">File upload</h4>
-            </div>
-          
-          <div class="modal-body">
-            <div class="uploader dz-clickable" data-action-url="/admin/user/8137/upload-file">
-      <div class="text-center">
-        <i class="glyphicons glyphicons-drop x3"></i>
-        <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
-      </div>
-    </div>
-  
-          </div>
-          <div class="modal-footer">
-            
-            
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-
-      
-        <a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-attach-files">
-    <i class="glyphicons glyphicons-cloud-upload glyphicons-white"></i>
-   Attach a file</a>
-      
-      <ul class="list-unstyled list-condensed">
-        
-      </ul>
-    
-          
-        
-      </td>
-    </tr>
-  
-
-    
-  </tbody>
-</table>
-      </div>
-      <div class="col-md-3">
-        <div class="well center-block">
-          <a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-edit-user" class="btn btn-default btn-sm btn-block">Update User Details</a>
-        </div>
-        
-          
-  
-<div class="modal fade " id="modal-click-to-call" tabindex="-1" role="dialog" aria-labelledby="modal-click-to-callLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-      <div class="modal-content">
-        <form method="POST" action="http://localhost:5000/admin/user/8137">
-          
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <h4 class="modal-title" id="modal-click-to-callLabel">Click to call</h4>
-            </div>
-          
-          <div class="modal-body">
-            
-          </div>
-          <div class="modal-footer">
-            
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  
-<div class="modal fade " id="modal-log-call" tabindex="-1" role="dialog" aria-labelledby="modal-log-callLabel" aria-hidden="true">
-    <div class="modal-dialog ">
-      <div class="modal-content">
-        <form method="POST" action="http://localhost:5000/admin/messenger/8137/log-call">
-          
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-              <h4 class="modal-title" id="modal-log-callLabel">Log Phone Call</h4>
-            </div>
-          
-          <div class="modal-body">
-            <div class="form-group">
-    <label for="notes">Notes</label>
-    <textarea name="notes" class="form-control" placeholder="Notes"></textarea>
-  </div>
-
-          </div>
-          <div class="modal-footer">
-            
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
-              <button type="submit" class="btn btn-success">Log</button>
-            
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <div class="well center-block messenger">
-    <div class="messages">
-      <blockquote class="chat" data-poll-url="/admin/user/8137/message/unread">
-        
-          <div class="message">
-            
-            
-              <p class="them" data-message-id="78" title="Jul 19, 2016, 5:55:57 PM">
-                Yup!
-                
-              </p>
-            
-          </div>
-        
-          <div class="message">
-            
-            
-              <p class="me" title="Jul 19, 2016, 5:55:57 PM">test 4</p>
-              
-            
-          </div>
-        
-          <div class="message">
-            
-              <div class="timestamp">
-                <small class="text-muted">7/19/16, 5:55 PM</small>
-              </div>
-            
-            
-              <p class="them" data-message-id="80" title="Jul 19, 2016, 5:55:57 PM">
-                Yahhh
-                
-              </p>
-            
-          </div>
-        
-      </blockquote>
-    </div>
-    <form action="http://localhost:5000/admin/user/8137/message/send" method="POST">
-      <div class="form-group">
-        <input type="hidden" name="message">
-        <textarea name="message_proxy" rows="1" class="textbox-message form-control input-sm " placeholder="Message" autocomplete="off"></textarea>
-        
-          <a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-log-call" class="click-to-call hidden-sm hidden-xs">
-    <i class="glyphicons glyphicons-phone-alt glyphicons-white"></i>
-  </a>
-        
-        <div class="button-insert-snippet">
-          <div class="dropdown">
-            <a href="http://localhost:5000/admin/user/8137#" class="dropdown-toggle" type="button" data-toggle="dropdown">
-            <svg width="17px" height="17px" viewBox="693 382 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <defs></defs>
-              <path d="M708,392 C708,392.553 707.553,393 707,393 L704,393 L704,396 C704,396.553 703.553,397 703,397 C702.447,397 702,396.553 702,396 L702,393 L699,393 C698.447,393 698,392.553 698,392 C698,391.447 698.447,391 699,391 L702,391 L702,388 C702,387.448 702.447,387 703,387 C703.553,387 704,387.448 704,388 L704,391 L707,391 C707.553,391 708,391.447 708,392 L708,392 Z M708,398.235 C706.875,399.137 705.503,399.743 704,399.931 C703.672,399.972 703.34,400 703,400 C702.66,400 702.328,399.972 702,399.931 C698.055,399.438 695,396.078 695,392 C695,391.309 695.095,390.64 695.26,390 C695.697,388.305 696.673,386.826 698,385.764 C699.125,384.862 700.497,384.257 702,384.069 C702.328,384.028 702.66,384 703,384 C703.34,384 703.672,384.028 704,384.069 C705.503,384.257 706.875,384.862 708,385.764 C709.828,387.228 711,389.475 711,392 C711,394.524 709.828,396.771 708,398.235 L708,398.235 Z M704,382.051 C703.671,382.018 703.338,382 703,382 C702.662,382 702.329,382.018 702,382.051 C700.552,382.194 699.199,382.655 698,383.351 C696.273,384.35 694.874,385.846 694,387.65 C693.643,388.388 693.372,389.175 693.204,390 C693.073,390.646 693,391.314 693,392 C693,393.424 693.307,394.773 693.843,396 C695.26,399.238 698.334,401.585 702,401.949 C702.329,401.982 702.662,402 703,402 C703.338,402 703.671,401.982 704,401.949 C705.448,401.806 706.801,401.345 708,400.649 C710.986,398.92 713,395.699 713,392 C713,388.301 710.986,385.08 708,383.351 C706.801,382.655 705.448,382.194 704,382.051 Z" id="ADD" stroke="none" fill="#777777" fill-rule="evenodd"></path>
-            </svg>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-right">
-              
-                <li class="dropdown-header">Prescreen related issues</li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hey Ryan, this is Ryan from Simple Contacts. Thanks so much for placing your order with us! I just reviewed your exams. Would you mind retaking them? Just a few things to note: for your redness test, please make sure your face fills the screen as you look up, left, and right with wide eyes so that we can clearly see the whites of your eyes. For the vision test, please make sure you are a full 10 feet (or 10 steps) away from your phone. Please let me know if you have any questions!">Redo both tests</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hi Ryan, this is Ryan from Simple Contacts. Thanks for placing your order with us! Our system has flagged you as wearing glasses while taking the exam. Do you have a pair of contact lenses you could retake your tests in? If not, please just let me know as we have an alternate solution for this.">Redo both tests (glasses)</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hey Ryan, this is Ryan from Simple Contacts. Thanks so much for placing your order with us! I just reviewed your exams. Would you mind retaking just the redness test? Please make sure to fully open your eyes and look up, left, and right. Once this is completed, your order will be reviewed by the doctor ASAP. Please let me know if you have any questions. Thanks!">Redo redness only</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hi Ryan, this is Ryan from Simple Contacts. Thanks for placing your order with us! I just reviewed your exams. Would you mind retaking just the vision test? Please make sure you are a full 10 feet (or 10 steps) away from your phone and in a well-lit room. Once this is completed, your exam will be submitted to our physician for review immediately. Please let me know if you have any questions!">Redo VA only</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Ineligible/disqualified</li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hi Ryan, this is Ryan from Simple Contacts. Unfortunately given the severity of your nearsightedness and being over 2 years since your last exam our reviewing physician feels it is unsafe to refill your prescription without you first receiving a fully dilated exam. We understand this may be an inconvenience, but your eye health is important to us.  Upon being evaluated by a physician, we would be happy to refill your prescription. I went ahead and placed a $35 discount on your account.">High Myope + FDE &gt;2 years</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Progress updates</li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hi Ryan, this is Ryan from Simple Contacts. Thanks so much for placing your order with us! I just wanted to let you know that your exams have been submitted to our physician and will be reviewed within the next 24 hours. I&#39;ll let you know as soon as the review status and doctor notes are available.">Ready for MD review</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hi Ryan, this is Ryan from Simple Contacts. Great news! Our physician has reviewed your exam and has approved your renewal for a full one year prescription. You can expect the tracking information along with a copy of your prescription to be sent to your email in the next 24-48 hours. Just a reminder, at any time over the next 12 months you can easily re-order more contacts right through the Simple Contacts app. Thanks again for choosing us and have a wonderful day!">MD approved (w/ 1yr Rx)</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Responses</li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Absolutely, right away! Would you mind if I ask why? we&#39;re still a young company so any insight here would be super valuable.">"Can I please cancel my order?"</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="I&#39;m sorry this has been so frustrating for you. We are rapidly working to improve our process but I&#39;m aware there are still some rough edges. If you&#39;re willing to try once more I can take 15 dollars off your order. If not, I will cancel it immediately.">"I'm frustrated &amp; I want to cancel!"</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="We offer two shipping options: Overnight delivery for $20 and 2-day for $15. Please let me know which one you would like!">"What are your shipping options?"</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="No worries! If you would like I can send you a trial pack of lenses completely free of charge. Once you received them (~3-5 business days) simply re-open the app and retake the eye and vision test. Does this sound okay?">"I have no more contacts left!"</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hi Ryan, Sure! here&#39;s the tracking information for your trial lenses. Please remember to return to the Simple Contacts app and retake both tests as soon as you receive them. Thanks! {TRACKING_LINK}">"Can I track the trial lenses?"</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Prescreen related issues (variant testing)</li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hey Ryan, this is Ryan from Simple Contacts. Thanks so much for placing your order with us! I just reviewed your exams. Would you mind retaking them? Just a few things to note: for your redness test, please make sure your face fills the screen as you look up, left, and right with wide eyes so that we can clearly see the whites of your eyes. For the vision test, please make sure you are a full 10 feet (or 10 steps) away from your phone. If you would like further guidance, please see these two short videos for more guidance.  Redness Test: https://vimeo.com/168260869 Vision Test: https://vimeo.com/168261568">Redo both tests (variant B)</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hey Ryan, this is Ryan from Simple Contacts. Thanks so much for placing your order with us! I just reviewed your exams. Would you mind retaking just the redness test? Please make sure to fully open your eyes and look up, left, and right. Once this is completed, your order will be reviewed by the doctor ASAP. Please see this video for further guidance: https://vimeo.com/168260869">Redo redness only (variant B)</a></li>
-                <li><a href="http://localhost:5000/admin/user/8137#" data-trigger="auto-populate" data-source="Hi Ryan, this is Ryan from Simple Contacts. Thanks for placing your order with us! I just reviewed your exams. Would you mind retaking just the vision test? Please make sure you are a full 10 feet (or 10 steps) away from your phone and in a well-lit room. Once this is completed, your exam will be submitted to our physician for review immediately. Please see this video for further guidance: https://vimeo.com/168261568">Redo VA only (variant B)</a></li>
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-
-        
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-        
-<h4 class="page-header">Orders</h4>
-
-  <div class="table-responsive">
-    <table class="table table-striped table-condensed">
-      <thead>
-        <tr>
-          <th>ID: Order</th>
-          <th class="hidden-xs">Date Created</th>
-          <th class="hidden-xs">Auto Renew</th>
-          <th class="hidden-xs">Subtotal</th>
-          <th class="hidden-xs">Total</th>
-          <th class="hidden-xs">Discount</th>
-          <th class="hidden-xs hidden-sm">Tracking</th>
-        </tr>
-      </thead>
-      <tbody>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5555">SC66PQW9D</a></code></td>
-            <td class="hidden-xs">Nov 25, 2016, 2:56:28 AM (5 days ago)</td>
-            <td class="hidden-xs"><code>False</code></td>
-            <td class="hidden-xs">$19.98</td>
-            <td class="hidden-xs">$10.00</td>
-            <td class="hidden-xs">$19.98</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5554">SC4GYPVXP</a></code></td>
-            <td class="hidden-xs">Nov 25, 2016, 2:55:57 AM (5 days ago)</td>
-            <td class="hidden-xs"><code>False</code></td>
-            <td class="hidden-xs">$19.98</td>
-            <td class="hidden-xs">$10.00</td>
-            <td class="hidden-xs">$19.98</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5553">SCFTJVPWX</a></code></td>
-            <td class="hidden-xs">Nov 25, 2016, 2:54:46 AM (5 days ago)</td>
-            <td class="hidden-xs"><code>False</code></td>
-            <td class="hidden-xs">$19.98</td>
-            <td class="hidden-xs">$10.00</td>
-            <td class="hidden-xs">$19.98</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5552">SCK9TWDKK</a></code></td>
-            <td class="hidden-xs">Nov 25, 2016, 2:53:47 AM (5 days ago)</td>
-            <td class="hidden-xs"><code>False</code></td>
-            <td class="hidden-xs">$19.98</td>
-            <td class="hidden-xs">$10.00</td>
-            <td class="hidden-xs">$19.98</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5475">SCR4X9TMQ</a></code></td>
-            <td class="hidden-xs">Oct 21, 2016, 4:54:19 PM (a month ago)</td>
-            <td class="hidden-xs"><span class="text-success">Nov 30, 2016 (now)</span></td>
-            <td class="hidden-xs">$142.25</td>
-            <td class="hidden-xs">$152.25</td>
-            <td class="hidden-xs">$0.00</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5474">SCM3BBQYB</a></code></td>
-            <td class="hidden-xs">Oct 19, 2016, 4:05:40 PM (a month ago)</td>
-            <td class="hidden-xs"><span class="text-success">Nov 30, 2016 (now)</span></td>
-            <td class="hidden-xs">$119.50</td>
-            <td class="hidden-xs">$129.50</td>
-            <td class="hidden-xs">$0.00</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5473">SCJFYY9X8</a></code></td>
-            <td class="hidden-xs">Oct 19, 2016, 3:48:48 PM (a month ago)</td>
-            <td class="hidden-xs"><span class="text-success">Nov 30, 2016 (now)</span></td>
-            <td class="hidden-xs">$119.50</td>
-            <td class="hidden-xs">$129.50</td>
-            <td class="hidden-xs">$0.00</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5472">SCB6FXBJ2</a></code></td>
-            <td class="hidden-xs">Sep 30, 2016, 6:26:07 PM (a month ago)</td>
-            <td class="hidden-xs"><span class="text-success">Mar 30, 2017 (3 months from now)</span></td>
-            <td class="hidden-xs">$396.00</td>
-            <td class="hidden-xs">$406.00</td>
-            <td class="hidden-xs">$0.00</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5471">SC7DCV2MK</a></code></td>
-            <td class="hidden-xs">Sep 29, 2016, 5:44:02 PM (2 months ago)</td>
-            <td class="hidden-xs"><span class="text-success">Mar 29, 2017 (3 months from now)</span></td>
-            <td class="hidden-xs">$396.00</td>
-            <td class="hidden-xs">$406.00</td>
-            <td class="hidden-xs">$0.00</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/order/5470">SC8BHH42B</a></code></td>
-            <td class="hidden-xs">Sep 29, 2016, 2:17:09 PM (2 months ago)</td>
-            <td class="hidden-xs"><span class="text-success">Mar 29, 2017 (3 months from now)</span></td>
-            <td class="hidden-xs">$396.00</td>
-            <td class="hidden-xs">$406.00</td>
-            <td class="hidden-xs">$0.00</td>
-            <td class="hidden-xs hidden-sm">
-              
-                <samp></samp>
-              
-            </td>
-          </tr>
-        
-      </tbody>
-    </table>
-  </div>
-
-        
-<h4 class="page-header">Wallet</h4>
-
-  <p class="lead">No data</p>
-
-
-        
-<h4 class="page-header">Addresses</h4>
-<div class="table-responsive" id="section-addresses">
-  <table class="table table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Label</th>
-        <th class="hidden-xs">City</th>
-        <th class="hidden-xs">State</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-        <tr>
-          <td>
-            <a data-id="356" class="btn-edit lnk">Default</a>
-          </td>
-          <td>New York</td>
-          <td>NY</td>
-        </tr>
-      
-        <tr>
-          <td>
-            <a data-id="3346" class="btn-edit lnk">Test 3</a>
-          </td>
-          <td>hhuu23</td>
-          <td>AK</td>
-        </tr>
-      
-        <tr>
-          <td>
-            <a data-id="3345" class="btn-edit lnk">Work</a>
-          </td>
-          <td>New York</td>
-          <td>NV</td>
-        </tr>
-      
-    </tbody>
-  </table>
-  <a class="btn-create lnk">Add new address</a>
-</div>
-        
-<h4 class="page-header">Exams</h4>
-
-  <table class="table table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>ID: Exam</th>
-        <th>Date Created</th>
-        <th>Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      
-        
-          <tr>
-            <td><code><a href="http://localhost:5000/admin/exam/49581">49581</a></code></td>
-            <td>Oct 21, 2016, 3:56:35 PM (a month ago)</td>
-            <td><code>USER_COMPLETE</code></td>
-          </tr>
-        
-      
-        
-          <tr>
-            <td><s><code><a href="http://localhost:5000/admin/exam/5022">5022</a></code></s></td>
-            <td><s>Jun 14, 2016, 3:39:38 AM (5 months ago)</s></td>
-            <td><s><code>USER_COMPLETE</code></s></td>
-          </tr>
-        
-          <tr>
-            <td><s><code><a href="http://localhost:5000/admin/exam/5017">5017</a></code></s></td>
-            <td><s>Jun 14, 2016, 3:29:53 AM (5 months ago)</s></td>
-            <td><s><code>USER_COMPLETE</code></s></td>
-          </tr>
-        
-          <tr>
-            <td><s><code><a href="http://localhost:5000/admin/exam/3590">3590</a></code></s></td>
-            <td><s>Jun 8, 2016, 9:13:06 PM (5 months ago)</s></td>
-            <td><s><code>USER_COMPLETE</code></s></td>
-          </tr>
-        
-          <tr>
-            <td><s><code><a href="http://localhost:5000/admin/exam/3533">3533</a></code></s></td>
-            <td><s>Jun 8, 2016, 5:56:59 PM (5 months ago)</s></td>
-            <td><s><code>USER_COMPLETE</code></s></td>
-          </tr>
-        
-      
-    </tbody>
-  </table>
-
-        
 
 
 <div class="modal fade " id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-videoLabel" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
           <div class="modal-body">
             test
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -1073,12 +197,12 @@
 <h4 class="page-header">Videos</h4>
 
   <div class="row">
-    
-  
-    
-    
 
-    
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -1093,12 +217,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-45885Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/45885/upload-calibration">
       <div class="text-center">
@@ -1106,11 +230,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -1118,17 +242,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-45885" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-45885Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/45885/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-45885Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -1144,12 +268,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -1159,28 +283,28 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/45885/" poster="https://scexams-dev.s3.amazonaws.com/2016-11-11/1478899708996-rkHZu3XWl-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=kbh46%2Bu6iaA5daqXWGAcAy6XeJk%3D" preload="none" class="video" controls="controls">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 11/11/16, 9:28 PM</small></li>
         <li><small>Type: <code>eye</code></small></li>
         <li><small>Video ID: <code>45885</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/45885/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -1197,17 +321,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-11-11/1478899708996-rkHZu3XWl.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=NwK3%2FTv5TyMBvAbUQy7BXXWb%2BZM%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-45885">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-45885">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -1230,13 +354,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -1251,12 +375,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-45884Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/45884/upload-calibration">
       <div class="text-center">
@@ -1264,11 +388,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -1276,17 +400,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-45884" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-45884Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/45884/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-45884Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -1302,12 +426,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -1317,28 +441,28 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/45884/" poster="https://scexams-dev.s3.amazonaws.com/2016-10-23/1477244058421-HyziNu5yl-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=u%2BQ2FuTv2nf4xJ3qMKLqLo4KWMs%3D" preload="none" class="video" controls="controls">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 10/23/16, 5:34 PM</small></li>
         <li><small>Type: <code>eye</code></small></li>
         <li><small>Video ID: <code>45884</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/45884/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -1355,17 +479,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-10-23/1477244058421-HyziNu5yl.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=Lp5hnnCtTfxW9a%2FsTyjYvvO8fE4%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-45884">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-45884">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -1388,13 +512,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -1409,12 +533,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-45883Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/45883/upload-calibration">
       <div class="text-center">
@@ -1422,11 +546,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -1434,17 +558,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-45883" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-45883Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/45883/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-45883Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -1460,12 +584,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -1475,30 +599,30 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/45883/" poster="https://scexams-dev.s3.amazonaws.com/2016-10-21/1477065461156-rkaljnDJl-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=xYZfrPVOH1iWdQgduN7i9guwukg%3D" preload="none" class="video" controls="controls">
-    
+
       <track src="/admin/video/captions/va-45883-en.vtt" label="VA Letters" kind="subtitles" srclang="en" default="">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 10/21/16, 3:57 PM</small></li>
         <li><small>Type: <code>va</code></small></li>
         <li><small>Video ID: <code>45883</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/45883/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -1515,17 +639,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-10-21/1477065461156-rkaljnDJl.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=otaSAzWarVaP1fjsKlYuHDUNzoM%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-45883">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-45883">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -1548,13 +672,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -1569,12 +693,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-45882Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/45882/upload-calibration">
       <div class="text-center">
@@ -1582,11 +706,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -1594,17 +718,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-45882" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-45882Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/45882/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-45882Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -1620,12 +744,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -1635,28 +759,28 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/45882/" poster="https://scexams-dev.s3.amazonaws.com/2016-10-21/1477065418818-B1Q092vJx-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=8IeEqGOli9cLJY%2FdQgTbTjYnxC4%3D" preload="none" class="video" controls="controls">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 10/21/16, 3:56 PM</small></li>
         <li><small>Type: <code>eye</code></small></li>
         <li><small>Video ID: <code>45882</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/45882/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -1673,17 +797,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-10-21/1477065418818-B1Q092vJx.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=DYSky3P55a0ftQfIG6GcKZ8XJx4%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-45882">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-45882">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -1706,13 +830,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -1727,12 +851,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-45881Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/45881/upload-calibration">
       <div class="text-center">
@@ -1740,11 +864,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -1752,17 +876,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-45881" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-45881Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/45881/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-45881Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -1778,12 +902,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -1793,28 +917,28 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/45881/" poster="https://scexams-dev.s3.amazonaws.com/2016-10-03/1475507750281-HyAQUlxA-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=KhdRtExAYrYb3g%2FtA9SPs1QV6%2B0%3D" preload="none" class="video" controls="controls">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 10/3/16, 3:16 PM</small></li>
         <li><small>Type: <code>eye</code></small></li>
         <li><small>Video ID: <code>45881</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/45881/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -1831,17 +955,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-10-03/1475507750281-HyAQUlxA.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=MVhoXkJqCS8afvtzlVyLUkD%2BWPA%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-45881">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-45881">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -1864,13 +988,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -1885,12 +1009,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-45880Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/45880/upload-calibration">
       <div class="text-center">
@@ -1898,11 +1022,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -1910,17 +1034,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-45880" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-45880Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/45880/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-45880Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -1936,12 +1060,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -1951,28 +1075,28 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/45880/" poster="https://scexams-dev.s3.amazonaws.com/2016-10-02/1475456301744-H18467JC-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=F525cjLgRvVWAdOAQZoBPzLN4F0%3D" preload="none" class="video" controls="controls">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 10/3/16, 12:58 AM</small></li>
         <li><small>Type: <code>eye</code></small></li>
         <li><small>Video ID: <code>45880</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/45880/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -1989,17 +1113,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-10-02/1475456301744-H18467JC.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=XWCd1lX7tqoXMHTHqmd0Z9E6%2Fdc%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-45880">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-45880">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -2022,13 +1146,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -2043,12 +1167,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-8843Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/8843/upload-calibration">
       <div class="text-center">
@@ -2056,11 +1180,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -2068,17 +1192,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-8843" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-8843Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/8843/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-8843Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -2094,12 +1218,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -2109,30 +1233,30 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/8843/" poster="https://scexams-dev.s3.amazonaws.com/2016-06-14/1465875637037-ryphng6N-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=vUm%2FaDL32eofi%2BisJ9PEwdoWnHI%3D" preload="none" class="video" controls="controls">
-    
+
       <track src="/admin/video/captions/va-8843-en.vtt" label="VA Letters" kind="subtitles" srclang="en" default="">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 6/14/16, 3:40 AM</small></li>
         <li><small>Type: <code>va</code></small></li>
         <li><small>Video ID: <code>8843</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/8843/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -2149,17 +1273,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-06-14/1465875637037-ryphng6N.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=8RhW%2FiyTqhAb2fexaF%2Bn9k55%2Fe8%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-8843">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-8843">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -2182,13 +1306,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -2203,12 +1327,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-8842Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/8842/upload-calibration">
       <div class="text-center">
@@ -2216,11 +1340,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -2228,17 +1352,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-8842" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-8842Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/8842/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-8842Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -2254,12 +1378,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -2269,28 +1393,28 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/8842/" poster="https://scexams-dev.s3.amazonaws.com/2016-06-14/1465875583524-H1uKneaV-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=0iapJ%2BQEQAOkIV9tgAdD6nX4JNg%3D" preload="none" class="video" controls="controls">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 6/14/16, 3:39 AM</small></li>
         <li><small>Type: <code>eye</code></small></li>
         <li><small>Video ID: <code>8842</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/8842/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -2307,17 +1431,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-06-14/1465875583524-H1uKneaV.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=f43mrXR3nd4tAxgefVDlgGHIwA4%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-8842">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-8842">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -2340,13 +1464,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -2361,12 +1485,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-8841Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/8841/upload-calibration">
       <div class="text-center">
@@ -2374,11 +1498,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -2386,17 +1510,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-8841" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-8841Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/8841/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-8841Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -2412,12 +1536,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -2427,30 +1551,30 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/8841/" poster="https://scexams-dev.s3.amazonaws.com/2016-06-14/1465875045191-Hypvqla4-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=ONadJz6R0ndUNmf2vRqQyXef8z4%3D" preload="none" class="video" controls="controls">
-    
+
       <track src="/admin/video/captions/va-8841-en.vtt" label="VA Letters" kind="subtitles" srclang="en" default="">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 6/14/16, 3:30 AM</small></li>
         <li><small>Type: <code>va</code></small></li>
         <li><small>Video ID: <code>8841</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/8841/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -2467,17 +1591,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-06-14/1465875045191-Hypvqla4.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=wr6%2FkfrvMewfj7K12dI7S6O2szw%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-8841">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-8841">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -2500,13 +1624,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -2521,12 +1645,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-8839Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/8839/upload-calibration">
       <div class="text-center">
@@ -2534,11 +1658,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -2546,17 +1670,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-8839" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-8839Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/8839/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-8839Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -2572,12 +1696,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -2587,28 +1711,28 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/8839/" poster="https://scexams-dev.s3.amazonaws.com/2016-06-14/1465874997210-Hya45xpN-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=%2B7htlnawZtjcFa0iuMGMfwPoNec%3D" preload="none" class="video" controls="controls">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 6/14/16, 3:29 AM</small></li>
         <li><small>Type: <code>eye</code></small></li>
         <li><small>Video ID: <code>8839</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/8839/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -2625,17 +1749,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-06-14/1465874997210-Hya45xpN.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=6OAj3Jrwk0wVnNxeBsPwVng%2BvgQ%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-8839">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-8839">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -2658,13 +1782,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -2679,12 +1803,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-7725Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/7725/upload-calibration">
       <div class="text-center">
@@ -2692,11 +1816,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -2704,17 +1828,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-7725" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-7725Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/7725/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-7725Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -2730,12 +1854,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -2745,30 +1869,30 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/7725/" poster="https://scexams-dev.s3.amazonaws.com/2016-06-08/1465420446747-B1Dsc-LV-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=gxYzhuQT4knBDvLyzrpsQRTz4vg%3D" preload="none" class="video" controls="controls">
-    
+
       <track src="/admin/video/captions/va-7725-en.vtt" label="VA Letters" kind="subtitles" srclang="en" default="">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 6/8/16, 9:14 PM</small></li>
         <li><small>Type: <code>va</code></small></li>
         <li><small>Video ID: <code>7725</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/7725/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -2785,17 +1909,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-06-08/1465420446747-B1Dsc-LV.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=uwHwj5nqXt9AbA4zPmkmSXBGlMQ%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-7725">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-7725">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -2818,13 +1942,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -2839,12 +1963,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-7722Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/7722/upload-calibration">
       <div class="text-center">
@@ -2852,11 +1976,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -2864,17 +1988,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-7722" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-7722Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/7722/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-7722Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -2890,12 +2014,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -2905,28 +2029,28 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/7722/" poster="https://scexams-dev.s3.amazonaws.com/2016-06-08/1465420398156-HJI_9ZI4-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=XnDsUdyXFhwRGGy%2FubIN3uj7rZk%3D" preload="none" class="video" controls="controls">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 6/8/16, 9:13 PM</small></li>
         <li><small>Type: <code>eye</code></small></li>
         <li><small>Video ID: <code>7722</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/7722/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -2943,17 +2067,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-06-08/1465420398156-HJI_9ZI4.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=tN2mMH0Az6Aysh24WcnjO%2FjCBDE%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-7722">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-7722">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -2976,13 +2100,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -2997,12 +2121,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-7661Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/7661/upload-calibration">
       <div class="text-center">
@@ -3010,11 +2134,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -3022,17 +2146,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-7661" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-7661Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/7661/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-7661Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -3048,12 +2172,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -3063,30 +2187,30 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/7661/" poster="https://scexams-dev.s3.amazonaws.com/2016-06-08/1465411080107-B1lzUkU4-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=%2BkKSwFcPdNpHyByG03gwuJdXSws%3D" preload="none" class="video" controls="controls">
-    
+
       <track src="/admin/video/captions/va-7661-en.vtt" label="VA Letters" kind="subtitles" srclang="en" default="">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 6/8/16, 6:38 PM</small></li>
         <li><small>Type: <code>va</code></small></li>
         <li><small>Video ID: <code>7661</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/7661/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -3103,17 +2227,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-06-08/1465411080107-B1lzUkU4.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=CUSoxgsbPcNghNklGzlmXq3rWeU%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-7661">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-7661">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -3136,13 +2260,13 @@
             </div>
           </form>
         </div>
-      
-    </div>
-  
-    
-    
 
-    
+    </div>
+
+
+
+
+
   <div id="preview-template" style="display: none;">
   <div class="dz-preview dz-file-preview">
     <div class="dz-progress">
@@ -3157,12 +2281,12 @@
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/user/None">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-override-distance-calibration-7660Label">File upload</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="uploader dz-clickable" data-action-url="/admin/video/7660/upload-calibration">
       <div class="text-center">
@@ -3170,11 +2294,11 @@
         <div class="text-center instructions">drag and drop file or <a href="http://localhost:5000/admin/user/8137#" class="browse-files">browse</a>.</div>
       </div>
     </div>
-  
+
           </div>
           <div class="modal-footer">
-            
-            
+
+
           </div>
         </form>
       </div>
@@ -3182,17 +2306,17 @@
   </div>
 
 
-    
+
 <div class="modal fade " id="modal-transfer-ownership-7660" tabindex="-1" role="dialog" aria-labelledby="modal-transfer-ownership-7660Label" aria-hidden="true">
     <div class="modal-dialog ">
       <div class="modal-content">
         <form method="POST" action="http://localhost:5000/admin/video/7660/transfer-ownership">
-          
+
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               <h4 class="modal-title" id="modal-transfer-ownership-7660Label">Transfer video ownership</h4>
             </div>
-          
+
           <div class="modal-body">
             <div class="row">
     <div class="col-md-12">
@@ -3208,12 +2332,12 @@
 
           </div>
           <div class="modal-footer">
-            
+
               <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-            
-            
+
+
               <button type="submit" class="btn btn-danger">Transfer</button>
-            
+
           </div>
         </form>
       </div>
@@ -3223,28 +2347,28 @@
 
     <div class="col-xs-12 col-lg-2 col-md-3 col-sm-4 video-container">
 
-      
-        
-        
-          
-          
+
+
+
+
+
   <video src="/admin/video/7660/" poster="https://scexams-dev.s3.amazonaws.com/2016-06-08/1465411036253-BJVJUkLN-poster.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=wyttLfwkUrJTi94z%2F1SAlkYRidk%3D" preload="none" class="video" controls="controls">
-    
+
   </video>
 
-        
-      
+
+
       <ul class="list-unstyled">
         <li><small>Date: 6/8/16, 6:37 PM</small></li>
         <li><small>Type: <code>eye</code></small></li>
         <li><small>Video ID: <code>7660</code></small></li>
       </ul>
-      
+
         <div class="video-menu">
           <form method="POST" action="http://localhost:5000/admin/video/7660/status">
             <div class="dropdown sm-pull-right">
               <a class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                
+
     <i class="glyphicons glyphicons-cogwheel glyphicons-white"></i>
    <span class="caret"></span>
               </a>
@@ -3261,17 +2385,17 @@
                 <li><a href="https://scexams-dev.s3.amazonaws.com/2016-06-08/1465411036253-BJVJUkLN.jpg?AWSAccessKeyId=AKIAJ44642TLULNR5E2Q&amp;Expires=1480620909&amp;Signature=cUYy6yMsUmKhSvkkqDxqiD9alvc%3D" target="_blank">
     <i class="glyphicons glyphicons-picture glyphicons-white"></i>
    Distance calibration</a></li>
-                
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-override-distance-calibration-7660">
     <i class="glyphicons glyphicons-drop glyphicons-white"></i>
    Upload calibration</a></li>
-                
-                
-                
+
+
+
                   <li><a href="http://localhost:5000/admin/user/8137#" data-toggle="modal" data-target="#modal-transfer-ownership-7660">
     <i class="glyphicons glyphicons-transfer glyphicons-white"></i>
    Transfer ownership</a></li>
-                
+
                 <li class="dropdown-header"><hr></li>
                 <li class="dropdown-header">Status</li>
                 <li class="dropdown-header allow-misclicks">
@@ -3294,21 +2418,19 @@
             </div>
           </form>
         </div>
-      
+
     </div>
-  
+
 
   </div>
 
-        
-<h4 class="page-header">Logs</h4>
 
       </div>
     </div>
   </div>
 
       </div>
-    
+
     <script src="./Mockup_files/bundle.js"></script><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;"><input type="file" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;">
-  
+
 </body></html>
