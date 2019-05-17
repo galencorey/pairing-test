@@ -2,7 +2,7 @@
 For this project, we're not concerned with matching the design. We're interested in how you approach a new task, the questions you ask, and how you iterate through problems that you encounter.
 
 ### Instructions 
-Youd goal is to build a video thumbnail widget in React. Your prototype should:
+Your goal is to build a video thumbnail widget in React. Your prototype should:
 
 - Render a list of videos.
 - Show type, video id, date underneath the video.
